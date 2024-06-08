@@ -19,7 +19,7 @@ export type ButtonProps = {
 const baseClass = "rounded-full h-11 py-2 px-4";
 
 const variantClass = {
-  [ButtonVariant.Primary]: "text-white bg-orange-700 hover:bg-orange-600/75",
+  [ButtonVariant.Primary]: "text-white bg-red-700 hover:bg-orange-600/75",
   [ButtonVariant.Secondary]:
     "bg-transparent text-orange-600 border border-solid border-orange-600 hover:text-white hover:bg-orange-600",
 };
@@ -37,11 +37,11 @@ export function Button({
 
   const handleClick = () => {
     setCurrentText("Hey, I was clicked");
-    onClick?.(); 
+    onClick?.();
   };
 
   useEffect(() => {
-    setCurrentText(text); 
+    setCurrentText(text);
   }, [text]);
 
   return (
