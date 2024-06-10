@@ -19,9 +19,9 @@ export type ButtonProps = {
 const baseClass = "rounded-full h-11 py-2 px-4";
 
 const variantClass = {
-  [ButtonVariant.Primary]: "text-white bg-red-700 hover:bg-orange-600/75",
+  [ButtonVariant.Primary]: "text-white bg-primary-light hover:opacity-75" ,
   [ButtonVariant.Secondary]:
-    "bg-transparent text-orange-600 border border-solid border-orange-600 hover:text-white hover:bg-orange-600",
+    "text-white bg-secondary-dark hover:opacity-75",
 };
 
 export function Button({
@@ -33,16 +33,6 @@ export function Button({
   text = "",
   ...otherProps
 }: ButtonProps) {
-  const [currentText, setCurrentText] = useState(text);
-
-  const handleClick = () => {
-    setCurrentText("Hey, I was clicked");
-    onClick?.();
-  };
-
-  useEffect(() => {
-    setCurrentText(text);
-  }, [text]);
 
   return (
     <button
@@ -50,10 +40,10 @@ export function Button({
       className={cx(`${variantClass[variant]} ${baseClass} ${className}`, {
         "opacity-50 cursor-not-allowed": disabled,
       })}
-      onClick={handleClick}
+      onClick={onClick}
       disabled={disabled}
     >
-      {currentText || children}
+      {children}
     </button>
   );
 }
