@@ -4,6 +4,7 @@ import { Navbar } from "@/components/Navbar/Navbar";
 import { NavItem, NavItemProps } from "@/components/Navbar/NavItem";
 import { useMemo } from "react";
 import Head from "next/head";
+import { Banner } from "@/containers/Banner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -47,6 +48,7 @@ export default function Home() {
             {children}
           </div>
         </Navbar>
+        <Banner></Banner>
       </div>
     </>
   );
