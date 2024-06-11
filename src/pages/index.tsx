@@ -5,6 +5,7 @@ import { NavItem, NavItemProps } from "@/components/Navbar/NavItem";
 import { useMemo } from "react";
 import Head from "next/head";
 import { Banner } from "@/containers/Banner";
+import { About } from "@/containers/About";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -49,6 +50,7 @@ export default function Home() {
           </div>
         </Navbar>
         <Banner></Banner>
+        <About></About>
       </div>
     </>
   );

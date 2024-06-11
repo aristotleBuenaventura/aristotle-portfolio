@@ -20,7 +20,7 @@ export function Banner({}: BannerProps) {
                         </div>
                     </div>
                 </div>
-                <div className="mx-5 mb-4 mt-10 flex justify-end lg:justify-center lg:me-0 me-40">
+                <div className="mx-5 mb-4 mt-10 flex justify-end sm:justify-center ">
                     <img 
                         src="/images/arispixel.jpeg" 
                         alt="Aristotle Buenaventura" 
