@@ -36,7 +36,7 @@ const links : NavItemProps[] = [
 ]
 
 const children = () => { 
-  return links.map((link)=>  <NavItem url = {link.url} text={link.text}/>)
+  return links.map((link,i)=>  <NavItem key={i} url = {link.url} text={link.text}/>)
 }
 
 export const Primary: Story = {

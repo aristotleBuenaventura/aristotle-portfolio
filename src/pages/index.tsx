@@ -36,7 +36,7 @@ const links : NavItemProps[] = [
 
 export default function Home() {
   const children = useMemo(() =>{
-    return links.map((link)=>  <NavItem url = {link.url} text={link.text}/>)
+    return links.map((link,i)=>  <NavItem key={i} url = {link.url} text={link.text}/>)
   }, [])
   return (
     <>

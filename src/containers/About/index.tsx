@@ -15,9 +15,9 @@ export function About({}: AboutProps) {
                     </div>
                     <div className="flex justify-center">
                         <div className="mx-5 mb-4 md:mb-0 text-xl ms-20 ">
-                        <span className="text-primary-light"> I'm Aristotle Buenaventura</span>,, an experienced educator with a degree in Information Technology and a passion for mathematics. Similar to my dedication to teaching, I'm seeking developer opportunities to apply my hands-on project experience and coursework knowledge. My aim is to bring a unique blend of teaching expertise and technical skills to a dynamic IT team, just as I thrive on crafting innovative solutions. Let's connect and collaborate to create something amazing together.
+                        <span className="text-primary-light"> I&apos;m Aristotle Buenaventura</span>,, an experienced educator with a degree in Information Technology and a passion for mathematics. Similar to my dedication to teaching, I&apos;m seeking developer opportunities to apply my hands-on project experience and coursework knowledge. My aim is to bring a unique blend of teaching expertise and technical skills to a dynamic IT team, just as I thrive on crafting innovative solutions. Let&apos;s connect and collaborate to create something amazing together.
                              
-                            a front-end developer. Let's create your dream website together!
+                            a front-end developer. Let&apos;s create your dream website together!
                         </div>
                     </div>
                 </div>

@@ -15,8 +15,8 @@ export function Banner({}: BannerProps) {
                     <div className="flex justify-center">
                         <div className="mx-5 mb-4 md:mb-0 text-xl ms-20 ">
                             Hey, 
-                            <span className="text-primary-light"> I'm Aristotle Buenaventura</span>, 
-                            a front-end developer. Let's create your dream website together!
+                            <span className="text-primary-light"> I&apos;m Aristotle Buenaventura</span>, 
+                            a front-end developer. Let&apos;s create your dream website together!
                         </div>
                     </div>
                 </div>
